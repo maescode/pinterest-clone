@@ -1,0 +1,57 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.container{
+	display: grid;
+	height: 100vh;
+	grid-template-columns: 1;
+	grid-template-rows: 120px auto 150px;
+}
+
+.nav-container{
+	height: 100px;
+	display: flex;
+	align-items: center;
+	list-style: none
+}
+
+.nav-item {
+	margin: 0px 10px;
+}
+
+.nav-item img{
+	width: 70px;
+}
+
+#search-form{
+	flex:2;
+}
+#search-form form{
+ border: solid 1px;
+ padding: 2px
+}
+
+#search-form input {
+	width:  90%;
+	height: 40px;
+	border: 0px;
+}
+
+#search-form input:focus{
+	outline: none;
+}
+
+header{
+	
+}
+
+
+main{
+	
+}
+
+footer{
+	
+}
