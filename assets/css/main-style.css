@@ -1,190 +1,256 @@
 * {
     margin: 0;
     padding: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-y: scroll;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: 1;
-    grid-template-rows: 120px auto 100px;
+
+/*styling nav*/
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0px;
+    box-shadow: 0px 0px 6px 0px gray;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 10;
 }
 
-.nav-container {
-    height: 90px;
-    display: flex;
-    align-items: center;
-    list-style: none
+#nav-brand img {
+    width: 60px;
 }
 
 .nav-item {
-    margin: 0px 10px;
+    margin: 0px 5px;
+    flex: 1;
 }
 
-.nav-item img {
-    width: 70px;
+#nav-search {
+    flex-basis: 70%;
 }
 
 .nav-item a {
     text-decoration: none;
     font-weight: bolder;
-    color: black;
-    text-decoration: none;
 }
 
-#search-form {
-    flex: 2;
+#following a {
+    padding: 15px 20px;
+    color: rgb(10, 10, 10);
 }
 
-#search-form form {
-    border-radius: 20px;
-    background-color: #E4E4E4;
-    padding: 2px 10px;
-    outline: none;
-    transition: outline ease-in 5s;
-}
-
-.active {
-    background-color: black;
-    padding: 10px;
-    border-radius: 20px;
+#following a:hover {
+    border-radius: 30px;
+    background-color: rgb(233, 233, 233);
 }
 
 .active a {
     color: white;
+    background-color: rgb(32, 32, 32);
+    padding: 15px 20px;
+    border-radius: 30px;
 }
 
-.fa,
-.fas {
-    font-size: 1.2em;
-    color: gray;
+.nav-item .fa,
+.nav-item .fas {
+    padding: 12px;
+    font-size: 1.4em;
+    color: rgb(75, 75, 75);
 }
 
-#search-form form:hover {
-    background-color: #E1E1E1;
-    ;
+#search {
+    font-size: 1em;
+    padding: 0px;
 }
 
-#search-form input {
-    background-color: inherit;
-    width: 90%;
-    height: 40px;
+#search:hover {
+    background-color: rgb(226, 226, 226);
+}
+
+.nav-item .fa:hover,
+.nav-item .fas:hover {
+    background-color: rgb(233, 233, 233);
+    border-radius: 100%;
+}
+
+.nav-item form {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border-radius: 30px;
     border: 0px;
-}
-
-#search-form input:focus {
     outline: none;
+    background-color: rgb(226, 226, 226);
 }
 
-#search-form:active {
-    border: solid 4px lightblue;
-    border-radius: 50px;
+.nav-item form:active {
+    outline: 1px;
+    border: solid 3px lightblue;
 }
 
-header {
-    width: 100%;
-    background-color: white;
-    position: fixed;
-    top: 0px;
-    z-index: 5
+.nav-item form label {
+    padding-left: 10px;
+}
+
+.nav-item form input {
+    border: 0px;
+    background-color: inherit;
+    border-radius: inherit;
+    outline: none;
+    flex: auto;
+    font-size: 15px;
+}
+
+#min-search {
+    display: none;
 }
 
 main {
     margin-top: 100px;
-    width: 85%;
+    padding-left: 30px;
+}
+
+image-list {
+    width: 90%;
     margin: auto;
-    padding: 10px;
 }
 
-.gallery {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-auto-rows: auto;
-    grid-auto-flow: dense;
+.grid-sizer,
+.grid-item {
+    width: 270px;
+    margin: 10px;
 }
 
-.gallery div {
-    border-radius: 12px;
-}
-
-.gallery img {
-    border-radius: inherit;
-    width: 100%;
+.grid-item img {
     display: block;
+    width: 100%;
+}
+
+.image-list {
     margin: auto;
+    list-style: none;
 }
 
-.horizontal {
-    grid-column: auto / span 2;
+.image-card {
     position: relative;
+    border-radius: 30px;
 }
 
-.horizontal img {
-    width: 100%;
-    height: 220px;
+.image-card img {
+    border-radius: 30px;
 }
 
-.normal {
-    position: relative;
-}
-
-.normal img {
-    width: 100%;
-}
-
-.vertical {
-    grid-row: span 2;
-    position: relative;
-}
-
-.vertical img {
-    height: 100%;
-}
-
-.big {
-    grid-column: span 2;
-    grid-row: span 2;
-    position: relative;
-}
-
-.big img {
-    width: 100%;
-}
-
-.overlay {
+.image-card-overlay {
     position: absolute;
-    top: 0px;
+    top: 0;
     width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.0);
-    transition: background-color ease-in-out 1s;
-    z-index: 2;
+    height: 99%;
+    border-radius: 30px;
     display: flex;
-    align-items: flex-end;
-    border-radius: inherit;
+    flex-direction: column;
+    justify-content: space-between;
+    opacity: 0;
+    transition: background-color ease-in-out 200ms;
 }
 
-.normal div .overlay-text {
-    flex: 1;
+.image-card-overlay:hover {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: zoom-in;
+}
+
+.image-card-overlay button {
+    margin: 20px;
+    padding: 15px 20px 10px 20px;
+    background-color: red;
+    border: 0px;
     color: white;
+    outline: none;
+    border-radius: 15px;
+    align-self: flex-end;
+    font-weight: bolder;
+    cursor: pointer;
 }
 
-.overlay:hover {
-    background-color: rgba(0, 0, 0, 0.5);
+.image-card-overlay button:hover {
+    background-color: rgb(241, 7, 7);
 }
 
-.overlay-text {
-    padding: 0.5em 1em;
-    flex: 1;
-    color: white;
+.image-card-overlay-footer {
+    margin: 10px 0px;
     text-align: center;
 }
 
-.overlay-text a {
+.image-card-overlay-footer * {
+    padding: 5px;
+    margin: 5px;
+}
+
+.image-card-overlay-footer .download,
+.image-card-overlay-footer .ellipses {
+    padding: 10px;
+    background-color: white;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.image-card-overlay-footer span {
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.image-card-overlay-footer span a {
     text-decoration: none;
-    color: white;
+    font-weight: 900;
+    color: rgb(15, 15, 15);
+}
+
+.rotate {
+    transform: rotate(45deg);
+    margin-top: 0px;
+    padding: 0px;
+}
+
+@media(max-width: 490px) {
+    #min-search {
+        display: initial;
+    }
+    #nav-search {
+        display: none;
+    }
+    .nav-item {
+        margin: 0px;
+        flex: 1;
+    }
+    #following a {
+        padding: 10px 15px;
+        color: rgb(10, 10, 10);
+    }
+    .image-card-overlay button {
+        margin: 10px;
+        padding: 10px 5px 5px 15px;
+        background-color: red;
+        border: 0px;
+        color: white;
+        outline: none;
+        border-radius: 15px;
+        align-self: flex-end;
+        font-weight: bolder;
+        cursor: pointer;
+    }
 }

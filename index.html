@@ -6,268 +6,463 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./assets/css/main-style.css">
+
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <nav>
-                <ul class="nav-container">
-                    <li class="nav-item">
-                        <a href="#"><img src="./assets/images/pinterest-icon.png" alt="pinterest logo"></a>
-                    </li>
-                    <li class="nav-item active"><a href="#">Home</a></li>
-                    <li class="nav-item"><a href="#">following</a></li>
-                    <li class="nav-item" id="search-form">
-                        <form>
-                            <i class="fa fa-search"></i>
-                            <input type="text" placeholder="search">
-                        </form>
-                    </li>
-                    <li class="nav-item"><a href="#"><i class="fa fa-bell"></i></a></li>
-                    <li class="nav-item"><a href="#"><i class="fa fa-comment-dots"></i></a></li>
-                    <li class="nav-item"><a href="#"><i class="fa fa-user"></i></a></li>
-                    <li class="nav-item"><a href="#"><i class="fas fa-angle-down"></i></i></a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <div class="gallery">
+    <!--navigation starts here-->
+    <nav>
+        <div class="nav-item" id="nav-brand">
+            <a href=""><img src="./assets/images/pinterest-icon.png"></a>
+        </div>
+        <div class="nav-item active">
+            <a href="#">Home</a>
+        </div>
+        <div class="nav-item" id="following">
+            <a href="#">following</a>
+        </div>
+        <div class="nav-item" id="min-search">
+            <a href="#"><i class="fa fa-search"></i></a>
+        </div>
+        <div class="nav-item" id="nav-search">
+            <form>
+                <label> <i class="fa fa-search" id="search"></i> search</label>
+                <input type="text">
+            </form>
+        </div>
 
-                <div class="vertical">
-                    <img src="./assets/images/img1.jpg">
-                    <div class="overlay">
-                        <div class="overlay-text">
-                            <p>
-                                <span>Image name </span> &nbsp;
-                                <span><a href="#">Download</a></span>
-                            </p>
+        <div class="nav-item">
+            <a href="#"><a href="#"><i class="fa fa-bell"></i></a>
+        </div>
+
+        <div class="nav-item">
+            <a href="#"><i class="fa fa-comment-dots"></i></a>
+        </div>
+        <div class="nav-item">
+            <a href="#"><i class="fa fa-user"></i></i></a>
+        </div>
+
+        <div class="nav-item">
+            <a href="#"><i class="fas fa-angle-down"></i></a>
+        </div>
+    </nav>
+
+    <main>
+        <ul class="image-list grid">
+            <li class="grid-sizer"></li>
+
+            <li class="grid-item">
+                <div class="image-card">
+                    <img src="./assets/images/img9.jpg">
+                    <div class="image-card-overlay">
+                        <button>Save</button>
+                        <div class="image-card-overlay-footer">
+                            <span>
+                                <i class="fas fa-arrow-up rotate"></i>
+                                <a href="">imageurl...</a>
+                            </span>
+                            <i class="fa fa-upload download"></i>
+                            <i class="fas fa-ellipsis-h ellipses"></i>
                         </div>
                     </div>
                 </div>
+                <h6>Picture title and detail from the website</h6>
+            </li>
 
-                <div class="normal">
+
+            <li class="grid-item">
+                <div class="image-card">
+                    <img src="./assets/images/img2.jpg">
+                    <div class="image-card-overlay">
+                        <button>Save</button>
+                        <div class="image-card-overlay-footer">
+                            <span>
+                                <i class="fas fa-arrow-up rotate"></i>
+                                <a href="">imageurl...</a>
+                            </span>
+                            <i class="fa fa-upload download"></i>
+                            <i class="fas fa-ellipsis-h ellipses"></i>
+                        </div>
+                    </div>
+                </div>
+                <h6>Picture title and detail from the website</h6>
+            </li>
+
+
+            <li class="grid-item">
+                <div class="image-card">
+                    <img src="./assets/images/img10.jpg">
+                    <div class="image-card-overlay">
+                        <button>Save</button>
+                        <div class="image-card-overlay-footer">
+                            <span>
+                                <i class="fas fa-arrow-up rotate"></i>
+                                <a href="">imageurl...</a>
+                            </span>
+                            <i class="fa fa-upload download"></i>
+                            <i class="fas fa-ellipsis-h ellipses"></i>
+                        </div>
+                    </div>
+                </div>
+                <h6>Picture title and detail from the website</h6>
+            </li>
+
+
+            <li class="grid-item">
+                <div class="image-card">
+                    <img src="./assets/images/img6.jpg">
+                    <div class="image-card-overlay">
+                        <button>Save</button>
+                        <div class="image-card-overlay-footer">
+                            <span>
+                                <i class="fas fa-arrow-up rotate"></i>
+                                <a href="">imageurl...</a>
+                            </span>
+                            <i class="fa fa-upload download"></i>
+                            <i class="fas fa-ellipsis-h ellipses"></i>
+                        </div>
+                    </div>
+                </div>
+                <h6>Picture title and detail from the website</h6>
+            </li>
+
+
+            <li class="grid-item">
+                <div class="image-card">
+                    <img src="./assets/images/img6.jpg">
+                    <div class="image-card-overlay">
+                        <button>Save</button>
+                        <div class="image-card-overlay-footer">
+                            <span>
+                                <i class="fas fa-arrow-up rotate"></i>
+                                <a href="">imageurl...</a>
+                            </span>
+                            <i class="fa fa-upload download"></i>
+                            <i class="fas fa-ellipsis-h ellipses"></i>
+                        </div>
+                    </div>
+                </div>
+                <h6>Picture title and detail from the website</h6>
+            </li>
+
+
+
+            <li class="grid-item">
+                <div class="image-card">
                     <img src="./assets/images/img3.jpg">
-                    <div class="overlay">
-                        <div class="overlay-text">
-                            <p>
-                                <span>Image name </span> &nbsp;
-                                <span><a href="#">Download</a></span>
-                            </p>
+                    <div class="image-card-overlay">
+                        <button>Save</button>
+                        <div class="image-card-overlay-footer">
+                            <span>
+                                <i class="fas fa-arrow-up rotate"></i>
+                                <a href="">imageurl...</a>
+                            </span>
+                            <i class="fa fa-upload download"></i>
+                            <i class="fas fa-ellipsis-h ellipses"></i>
                         </div>
                     </div>
                 </div>
+                <h6>Picture title and detail from the website</h6>
+            </li>
 
-                <div class="normal">
+
+            <li class="grid-item">
+                <div class="image-card">
+                    <img src="./assets/images/img4.jpg">
+                    <div class="image-card-overlay">
+                        <button>Save</button>
+                        <div class="image-card-overlay-footer">
+                            <span>
+                                <i class="fas fa-arrow-up rotate"></i>
+                                <a href="">imageurl...</a>
+                            </span>
+                            <i class="fa fa-upload download"></i>
+                            <i class="fas fa-ellipsis-h ellipses"></i>
+                        </div>
+                    </div>
+                </div>
+                <h6>Picture title and detail from the website</h6>
+            </li>
+
+
+            <li class="grid-item">
+                <div class="image-card">
+                    <img src="./assets/images/img9.jpg">
+                    <div class="image-card-overlay">
+                        <button>Save</button>
+                        <div class="image-card-overlay-footer">
+                            <span>
+                                <i class="fas fa-arrow-up rotate"></i>
+                                <a href="">imageurl...</a>
+                            </span>
+                            <i class="fa fa-upload download"></i>
+                            <i class="fas fa-ellipsis-h ellipses"></i>
+                        </div>
+                    </div>
+                </div>
+                <h6>Picture title and detail from the website</h6>
+            </li>
+
+
+            <li class="grid-item">
+                <div class="image-card">
+                    <img src="./assets/images/img10.jpg">
+                    <div class="image-card-overlay">
+                        <button>Save</button>
+                        <div class="image-card-overlay-footer">
+                            <span>
+                                <i class="fas fa-arrow-up rotate"></i>
+                                <a href="">imageurl...</a>
+                            </span>
+                            <i class="fa fa-upload download"></i>
+                            <i class="fas fa-ellipsis-h ellipses"></i>
+                        </div>
+                    </div>
+                </div>
+                <h6>Picture title and detail from the website</h6>
+            </li>
+
+
+            <li class="grid-item">
+                <div class="image-card">
+                    <img src="./assets/images/img2.jpg">
+                    <div class="image-card-overlay">
+                        <button>Save</button>
+                        <div class="image-card-overlay-footer">
+                            <span>
+                                <i class="fas fa-arrow-up rotate"></i>
+                                <a href="">imageurl...</a>
+                            </span>
+                            <i class="fa fa-upload download"></i>
+                            <i class="fas fa-ellipsis-h ellipses"></i>
+                        </div>
+                    </div>
+                </div>
+                <h6>Picture title and detail from the website</h6>
+            </li>
+
+
+            <li class="grid-item">
+                <div class="image-card">
+                    <img src="./assets/images/img8.jpg">
+                    <div class="image-card-overlay">
+                        <button>Save</button>
+                        <div class="image-card-overlay-footer">
+                            <span>
+                                <i class="fas fa-arrow-up rotate"></i>
+                                <a href="">imageurl...</a>
+                            </span>
+                            <i class="fa fa-upload download"></i>
+                            <i class="fas fa-ellipsis-h ellipses"></i>
+                        </div>
+                    </div>
+                </div>
+                <h6>Picture title and detail from the website</h6>
+            </li>
+
+
+            <li class="grid-item">
+                <div class="image-card">
+                    <img src="./assets/images/img10.jpg">
+                    <div class="image-card-overlay">
+                        <button>Save</button>
+                        <div class="image-card-overlay-footer">
+                            <span>
+                                <i class="fas fa-arrow-up rotate"></i>
+                                <a href="">imageurl...</a>
+                            </span>
+                            <i class="fa fa-upload download"></i>
+                            <i class="fas fa-ellipsis-h ellipses"></i>
+                        </div>
+                    </div>
+                </div>
+                <h6>Picture title and detail from the website</h6>
+            </li>
+
+
+            <li class="grid-item">
+                <div class="image-card">
+                    <img src="./assets/images/img9.jpg">
+                    <div class="image-card-overlay">
+                        <button>Save</button>
+                        <div class="image-card-overlay-footer">
+                            <span>
+                                <i class="fas fa-arrow-up rotate"></i>
+                                <a href="">imageurl...</a>
+                            </span>
+                            <i class="fa fa-upload download"></i>
+                            <i class="fas fa-ellipsis-h ellipses"></i>
+                        </div>
+                    </div>
+                </div>
+                <h6>Picture title and detail from the website</h6>
+            </li>
+
+
+            <li class="grid-item">
+                <div class="image-card">
+                    <img src="./assets/images/img6.jpg">
+                    <div class="image-card-overlay">
+                        <button>Save</button>
+                        <div class="image-card-overlay-footer">
+                            <span>
+                                <i class="fas fa-arrow-up rotate"></i>
+                                <a href="">imageurl...</a>
+                            </span>
+                            <i class="fa fa-upload download"></i>
+                            <i class="fas fa-ellipsis-h ellipses"></i>
+                        </div>
+                    </div>
+                </div>
+                <h6>Picture title and detail from the website</h6>
+            </li>
+
+
+            <li class="grid-item">
+                <div class="image-card">
                     <img src="./assets/images/img3.jpg">
-                    <div class="overlay">
-                        <div class="overlay-text">
-                            <p>
-                                <span>Image name </span> &nbsp;
-                                <span><a href="#">Download</a></span>
-                            </p>
+                    <div class="image-card-overlay">
+                        <button>Save</button>
+                        <div class="image-card-overlay-footer">
+                            <span>
+                                <i class="fas fa-arrow-up rotate"></i>
+                                <a href="">imageurl...</a>
+                            </span>
+                            <i class="fa fa-upload download"></i>
+                            <i class="fas fa-ellipsis-h ellipses"></i>
                         </div>
                     </div>
                 </div>
+                <h6>Picture title and detail from the website</h6>
+            </li>
 
-                <div class="vertical">
-                    <img src=" ./assets/images/img1.jpg ">
-                    <div class="overlay">
-                        <div class="overlay-text">
-                            <p>
-                                <span>Image name </span> &nbsp;
-                                <span><a href="#">Download</a></span>
-                            </p>
+
+            <li class="grid-item">
+                <div class="image-card">
+                    <img src="./assets/images/img4.jpg">
+                    <div class="image-card-overlay">
+                        <button>Save</button>
+                        <div class="image-card-overlay-footer">
+                            <span>
+                                <i class="fas fa-arrow-up rotate"></i>
+                                <a href="">imageurl...</a>
+                            </span>
+                            <i class="fa fa-upload download"></i>
+                            <i class="fas fa-ellipsis-h ellipses"></i>
                         </div>
                     </div>
                 </div>
+                <h6>Picture title and detail from the website</h6>
+            </li>
 
-                <div class="big">
-                    <img src="./assets/images/img3.jpg ">
-                    <div class="overlay">
-                        <div class="overlay-text">
-                            <p>
-                                <span>Image name </span> &nbsp;
-                                <span><a href="#">Download</a></span>
-                            </p>
+
+            <li class="grid-item">
+                <div class="image-card">
+                    <img src="./assets/images/img9.jpg">
+                    <div class="image-card-overlay">
+                        <button>Save</button>
+                        <div class="image-card-overlay-footer">
+                            <span>
+                                <i class="fas fa-arrow-up rotate"></i>
+                                <a href="">imageurl...</a>
+                            </span>
+                            <i class="fa fa-upload download"></i>
+                            <i class="fas fa-ellipsis-h ellipses"></i>
                         </div>
                     </div>
                 </div>
+                <h6>Picture title and detail from the website</h6>
+            </li>
 
-                <div class="normal">
-                    <img src="./assets/images/img3.jpg ">
-                    <div class="overlay">
-                        <div class="overlay-text">
-                            <p>
-                                <span>Image name </span> &nbsp;
-                                <span><a href="#">Download</a></span>
-                            </p>
+
+            <li class="grid-item">
+                <div class="image-card">
+                    <img src="./assets/images/img10.jpg">
+                    <div class="image-card-overlay">
+                        <button>Save</button>
+                        <div class="image-card-overlay-footer">
+                            <span>
+                                <i class="fas fa-arrow-up rotate"></i>
+                                <a href="">imageurl...</a>
+                            </span>
+                            <i class="fa fa-upload download"></i>
+                            <i class="fas fa-ellipsis-h ellipses"></i>
                         </div>
                     </div>
                 </div>
+                <h6>Picture title and detail from the website</h6>
+            </li>
 
-                <div class="horizontal">
-                    <img src="./assets/images/img4.jpg ">
-                    <div class="overlay">
-                        <div class="overlay-text">
-                            <p>
-                                <span>Image name </span> &nbsp;
-                                <span><a href="#">Download</a></span>
-                            </p>
+
+            <li class="grid-item">
+                <div class="image-card">
+                    <img src="./assets/images/img2.jpg">
+                    <div class="image-card-overlay">
+                        <button>Save</button>
+                        <div class="image-card-overlay-footer">
+                            <span>
+                                <i class="fas fa-arrow-up rotate"></i>
+                                <a href="">imageurl...</a>
+                            </span>
+                            <i class="fa fa-upload download"></i>
+                            <i class="fas fa-ellipsis-h ellipses"></i>
                         </div>
                     </div>
                 </div>
+                <h6>Picture title and detail from the website</h6>
+            </li>
 
-                <div class="normal">
-                    <img src="./assets/images/img3.jpg ">
-                    <div class="overlay">
-                        <div class="overlay-text">
-                            <p>
-                                <span>Image name </span> &nbsp;
-                                <span><a href="#">Download</a></span>
-                            </p>
+
+            <li class="grid-item">
+                <div class="image-card">
+                    <img src="./assets/images/img8.jpg">
+                    <div class="image-card-overlay">
+                        <button>Save</button>
+                        <div class="image-card-overlay-footer">
+                            <span>
+                                <i class="fas fa-arrow-up rotate"></i>
+                                <a href="">imageurl...</a>
+                            </span>
+                            <i class="fa fa-upload download"></i>
+                            <i class="fas fa-ellipsis-h ellipses"></i>
                         </div>
                     </div>
                 </div>
+                <h6>Picture title and detail from the website</h6>
+            </li>
 
 
-                <div class="normal">
-                    <img src="./assets/images/img3.jpg ">
-                    <div class="overlay">
-                        <div class="overlay-text">
-                            <p>
-                                <span>Image name </span> &nbsp;
-                                <span><a href="#">Download</a></span>
-                            </p>
+            <li class="grid-item">
+                <div class="image-card">
+                    <img src="./assets/images/img10.jpg">
+                    <div class="image-card-overlay">
+                        <button>Save</button>
+                        <div class="image-card-overlay-footer">
+                            <span>
+                                <i class="fas fa-arrow-up rotate"></i>
+                                <a href="">imageurl...</a>
+                            </span>
+                            <i class="fa fa-upload download"></i>
+                            <i class="fas fa-ellipsis-h ellipses"></i>
                         </div>
                     </div>
                 </div>
+                <h6>Picture title and detail from the website</h6>
+            </li>
 
-                <div class="normal">
-                    <img src="./assets/images/img3.jpg ">
-                    <div class="overlay">
-                        <div class="overlay-text">
-                            <p>
-                                <span>Image name </span> &nbsp;
-                                <span><a href="#">Download</a></span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="normal">
-                    <img src="./assets/images/img3.jpg ">
-                    <div class="overlay">
-                        <div class="overlay-text">
-                            <p>
-                                <span>Image name </span> &nbsp;
-                                <span><a href="#">Download</a></span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="big">
-                    <img src="./assets/images/img3.jpg ">
-                    <div class="overlay">
-                        <div class="overlay-text">
-                            <p>
-                                <span>Image name </span> &nbsp;
-                                <span><a href="#">Download</a></span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
+        </ul>
 
 
-                <div class="big">
-                    <img src="./assets/images/img3.jpg ">
-                    <div class="overlay">
-                        <div class="overlay-text">
-                            <p>
-                                <span>Image name </span> &nbsp;
-                                <span><a href="#">Download</a></span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="normal">
-                    <img src="./assets/images/img3.jpg ">
-                    <div class="overlay">
-                        <div class="overlay-text">
-                            <p>
-                                <span>Image name </span> &nbsp;
-                                <span><a href="#">Download</a></span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="horizontal">
-                    <img src="./assets/images/img4.jpg ">
-                    <div class="overlay">
-                        <div class="overlay-text">
-                            <p>
-                                <span>Image name </span> &nbsp;
-                                <span><a href="#">Download</a></span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="normal">
-                    <img src="./assets/images/img3.jpg ">
-                    <div class="overlay">
-                        <div class="overlay-text">
-                            <p>
-                                <span>Image name </span> &nbsp;
-                                <span><a href="#">Download</a></span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="normal">
-                    <img src="./assets/images/img3.jpg ">
-                    <div class="overlay">
-                        <div class="overlay-text">
-                            <p>
-                                <span>Image name </span> &nbsp;
-                                <span><a href="#">Download</a></span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="normal">
-                    <img src="./assets/images/img3.jpg">
-                    <div class="overlay">
-                        <div class="overlay-text">
-                            <p>
-                                <span>Image name </span> &nbsp;
-                                <span><a href="#">Download</a></span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="normal">
-                    <img src="./assets/images/img3.jpg">
-                    <div class="overlay">
-                        <div class="overlay-text">Hello</div>
-                    </div>
-                </div>
-
-            </div>
+    </main>
 
 
-        </main>
+    <!--footer starts here-->
+    <footer></footer>
 
-        <footer>
-            <p></p>
-        </footer>
-    </div>
+    <script src="./assets/js/masonry.pkgd.js"></script>
+    <script src="./assets/js/masonry-init.js"></script>
+
+
 </body>
 
 </html>
